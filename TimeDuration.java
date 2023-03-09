@@ -1,8 +1,11 @@
+import java.util.Scanner;
+
 public class TimeDuration {
 
     private int h;
     private int m;
     private int s;
+
 
     public TimeDuration(int h, int m, int s){
         this.h = h;
@@ -31,12 +34,16 @@ public class TimeDuration {
     }
 
     public static parseFromString(String time){
-        
+        System.out.println("ENTER TIME DURATION: ");
+
+        Scanner scanner = new Scanner(System.in);
+        time = scanner.nextLine();
     }
 
     public static void main(String[] args) {
         TimeDuration time = new TimeDuration(1, 2, 3);
         System.out.println(time);
-        System.out.println(parseFromString("2s"));
+        
+        
     }
 }
