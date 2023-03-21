@@ -5,7 +5,7 @@ public class TimeDuration {
     private int h;
     private int m;
     private int s;
-    public static int counter = 0;
+    private static int counter = 0;
 
 
 
